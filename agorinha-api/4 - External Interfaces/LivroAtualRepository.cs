@@ -1,5 +1,4 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 using agorinha_api.Entities.DTO;
 using agorinha_api.Entities.Repository;
 using Dapper;
@@ -24,7 +23,7 @@ namespace agorinha_api.ExternalInterfaces
                 connection.Open();
                 var results = connection.Query<LivroDTO>("SELECT * FROM LivroAtual");
                 var result = results.First();
-
+                connection.Close();
 
                 return result;
             }
@@ -41,6 +40,7 @@ namespace agorinha_api.ExternalInterfaces
                         ";
 
                 connection.Query(query, new { Name = livro.Name, Autor = livro.Autor, Ano = livro.Ano, Genero = livro.Genero, Sinopse = livro.Sinopse });
+                connection.Close();
                 return true;
 
             }

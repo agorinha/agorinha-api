@@ -24,6 +24,7 @@ namespace agorinha_api.ExternalInterfaces
             {
                 connection.Open();
                 var results = connection.Query<EncontrosDTO>("SELECT * FROM Encontros");
+                connection.Close();
 
                 return results;
             }
@@ -37,6 +38,7 @@ namespace agorinha_api.ExternalInterfaces
                 try
                 {
                     connection.Query(@"INSERT INTO ENCONTROS VALUES (@Data)", new { Data = data });
+                    connection.Close();
                     return "Insertion Succeeded";
 
                 } catch { return "Insertion Failed"; }
@@ -47,10 +49,12 @@ namespace agorinha_api.ExternalInterfaces
         {
             using (var connection = new SqlConnection(_connectionString))
             {
-                connection.Open();
+                
                 try
                 {
+                    connection.Open();
                     connection.Query(@"DELETE FROM ENCONTROS WHERE Numero=@Numero", new { Numero = number });
+                    connection.Close();
                     return "Deletion Succeeded";
 
                 }
