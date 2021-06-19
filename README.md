@@ -40,6 +40,14 @@ Data : { \
   "sinopse": "string" \
 }
 
+### /LivrosLidos/Add
+Data : { \
+  "name": "string", \
+  "autor": "string", \
+  "ano": 0, \
+  "genero": "string", \
+  "sinopse": "string" \
+}
 
 
 
