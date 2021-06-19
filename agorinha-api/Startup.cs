@@ -28,8 +28,7 @@ namespace agorinha_api
             services.AddScoped<IEncontrosRepository, EncontrosRepository>();
             services.AddScoped<ILivroAtualRepository, LivroAtualRepository>();
             services.AddScoped<ISugestaoRepository, SugestaoRepository>();
-
-
+            services.AddScoped<ILivrosLidosRepository, LivrosLidosRepository>();
 
         }
 

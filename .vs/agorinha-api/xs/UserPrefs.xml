@@ -1,14 +1,11 @@
 ﻿<Properties StartupConfiguration="{4CF32EC1-3239-415F-9071-8857F450B8DC}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="agorinha-api/Startup.cs">
     <Files>
-      <File FileName="agorinha-api/4 - External Interfaces/LivroAtualRepository.cs" Line="7" Column="1" />
-      <File FileName="agorinha-api/3 - Controllers/LivroAtualController.cs" Line="31" Column="66" />
-      <File FileName="agorinha-api/1 - Entities/Repository/ILivroAtualRepository.cs" Line="9" Column="47" />
-      <File FileName="agorinha-api/Properties/launchSettings.json" />
-      <File FileName="agorinha-api/1 - Entities/Repository/ISugestaoRepository.cs" Line="3" Column="1" />
-      <File FileName="agorinha-api/4 - External Interfaces/SugestaoRepository.cs" Line="20" Column="33" />
-      <File FileName="agorinha-api/3 - Controllers/SugestaoController.cs" Line="45" Column="10" />
-      <File FileName="agorinha-api/Startup.cs" Line="30" Column="72" />
+      <File FileName="agorinha-api/4 - External Interfaces/SugestaoRepository.cs" Line="60" Column="9" />
+      <File FileName="agorinha-api/4 - External Interfaces/LivrosLidosRepository.cs" Line="20" Column="1" />
+      <File FileName="agorinha-api/3 - Controllers/LivrosLidosController.cs" Line="34" Column="1" />
+      <File FileName="agorinha-api/3 - Controllers/SugestaoController.cs" Line="56" Column="6" />
+      <File FileName="agorinha-api/Startup.cs" Line="31" Column="74" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
