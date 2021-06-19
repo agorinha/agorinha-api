@@ -15,6 +15,8 @@ http://localhost:5000
 
 https://localhost:5001/swagger
 
+<img src="./SwaaggerExample.png" width="500" height="500">
+
 ## Data for POST/PUT Add/Update methods
 
 ### /Encontros/Add
